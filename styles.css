@@ -1,0 +1,202 @@
+
+/* Contact Body */
+.Contactbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("https://media.istockphoto.com/id/1557118048/photo/a-concept-that-expresses-the-hyper-connected-society-of-modern-society-by-connecting-people.jpg?s=612x612&w=0&k=20&c=7X-Keif1gNr5CsjR9OgHNpTx9sio9pc4UfSNCwGnLbk="); /* safer Unsplash link */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+/* Add | separator */
+.nav-links li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    color: black;
+}
+
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: red; /* Cold Fire vibe 🔥 */
+}
+
+/* Home Body */
+.Homebody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("https://img.freepik.com/premium-vector/spark-logo-design-concept_761413-6348.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; /* ensures text is readable */
+}
+
+/* Text shadow for Homebody text */
+.Homebody h1,
+.Homebody p {
+    text-shadow: 2px 2px 4px black;
+}
+/* Jina and Tagline Styles */
+.Jina {
+    background-color: firebrick;
+    font-size: 75px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Tagline {
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* About Body */
+.Aboutbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhdESna9lTPnCgNpAyUxtGca_NCJZK0hC7bpQYDfhmfGX50sr5TMXMbaJE7LzU-J2vr4zbQuCc32yc1r0JQ&s&ec=121516180");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+/* Headline Styles */
+.Headline {
+    font-size: 50px;
+    color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+/* Ready Styles */
+.Ready {
+    font-size: 35px;
+    text-align: center;
+    color: green;
+}   
+
+/* Reach Styles */
+.Reach {
+    font-size: 35px;
+    text-align: center;
+    color: blue;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns if screen wide enough */
+    gap: 15px 50px; /* row and column gap */
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between icon and text */
+}
+
+/* Colored icons */
+.contacts i.phone { color: #0a74da; }      /* blue phone */
+.contacts i.instagram { color: #E1306C; }  /* Instagram pink */
+.contacts i.telegram { color: #0088cc; }   /* Telegram blue */
+.contacts i.tiktok { color: #010101; }     /* TikTok black */
+.contacts i.whatsapp { color: #25D366; }   /* WhatsApp green */
+.contacts i.email { color: #FF4500; }      /* Orange email */
+.contacts i.linkedin { color: #0077B5; }   /* LinkedIn blue */
+.contacts i.facebook { color: #1877F2; }   /* Facebook blue */
+
+/* Links */
+.contacts a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.contacts a:hover {
+    color: #ff4500; /* Cold Fire accent color */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: firebrick;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Media Queries  */
+/* 📱 Mobile phones */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 🖥️ Desktop screens */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
