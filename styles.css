@@ -1,202 +1,434 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
 
-/* Contact Body */
-.Contactbody {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
 
-    background-image: url("https://media.istockphoto.com/id/1557118048/photo/a-concept-that-expresses-the-hyper-connected-society-of-modern-society-by-connecting-people.jpg?s=612x612&w=0&k=20&c=7X-Keif1gNr5CsjR9OgHNpTx9sio9pc4UfSNCwGnLbk="); /* safer Unsplash link */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: width 100px;
+}
+
+/*logo*/
+.logo {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+    border-radius: 50px;
+
+
+}
+
+/*Let's Chat Button*/
+.header-button {
+    font-family: "Roboto", sans-serif;
+    width: 70px;
+    height: 50px;
+    margin-left: 150px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    /*color: #b80303;
+    background-color: rgb(226, 154, 154);*/
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+    background-color: #00ff9d; 
+    color: #0a1f1a; /* Dark text on light background is very readable */
+    box-shadow: 0 4px 15px rgba(0, 255, 157, 0.2);
+
+}
+
+.header-button:hover {
+    /*color: gold;
+    background-color: rgb(0, 162, 255);*/
+    background-color: #ffffff;
+    color: #0a1f1a;
+    transform: translateY(-2px);
+
 }
 
 /* Navigation bar */
 nav {
-    background-color: #f2f2f2;
+    /*background-color: rgb(6, 88, 47);*/
+    background-color: #14362d; /* Darker green, less "vibrant" */
+    border-bottom: 2px solid #1a4a3e;
     padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    transition: 0.3s ease-in;
+    margin-top: 5px;
 }
 
-/* Navigation links */
+.nav:hover {
+    color: rgb(145, 1, 1);
+    background-color: rgb(2, 124, 67);
+}
+
+/*Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    bottom: 50px;
+
 }
 
 .nav-links li {
+
     margin: 0 10px;
-    position: relative;
+    display: flex;
 }
 
 /* Add | separator */
 .nav-links li:not(:last-child)::after {
+    text-decoration: none;
     content: "|";
+    align-content: center;
     margin-left: 15px;
     color: black;
+
 }
 
 /* Link styling */
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: #b0c4b1; /* Muted sage green */
+    /*color: black;*/
     font-size: 18px;
 }
 
 .nav-links a:hover {
-    color: red; /* Cold Fire vibe 🔥 */
+   color: #51ff00f6; /* Bright green only on hover */
+
 }
 
-/* Home Body */
-.Homebody {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-
-    background-image: url("https://img.freepik.com/premium-vector/spark-logo-design-concept_761413-6348.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black; /* ensures text is readable */
-}
-
-/* Text shadow for Homebody text */
-.Homebody h1,
-.Homebody p {
-    text-shadow: 2px 2px 4px black;
-}
-/* Jina and Tagline Styles */
-.Jina {
-    background-color: firebrick;
-    font-size: 75px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.Tagline {
-    font-size: 35px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-/* About Body */
-.Aboutbody {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhdESna9lTPnCgNpAyUxtGca_NCJZK0hC7bpQYDfhmfGX50sr5TMXMbaJE7LzU-J2vr4zbQuCc32yc1r0JQ&s&ec=121516180");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
-}
-
-/* Headline Styles */
-.Headline {
-    font-size: 50px;
-    color: yellow;
-    font-family: Arial, sans-serif;
-}
-
-/* Ready Styles */
-.Ready {
-    font-size: 35px;
-    text-align: center;
-    color: green;
-}   
-
-/* Reach Styles */
-.Reach {
-    font-size: 35px;
-    text-align: center;
-    color: blue;
-}
-
-.contacts {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 18px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns if screen wide enough */
-    gap: 15px 50px; /* row and column gap */
-}
-
-.contacts li {
+/*Body*/
+.body {
     display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0f4141 45%, #294d45 55%);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 5px;
+}
+
+.main-body {
+    flex: 1;/* This pushes the footer to the extreme bottom */
+    display: flex;
+    
+
+}
+
+.main-body-div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* Hero image*/
+.hero-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 20px;
+    cursor: cell;
+    
+}
+
+.hero-image:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    filter: brightness(1.4);
+    text-shadow: 0 0 15px rgb(255, 51, 0);
+    
+}
+
+/*Identity*/
+.hero-welcome {
+    font-size: 30px;
+    color: rgba(255, 102, 0, 0.507);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hero-name {
+    font-size: 25px;
+    /*color: rgb(6, 206, 39);*/
+    color: #00ff9d; 
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+    display: inline-block;
+    margin-top: 20px;
+    filter: brightness(1.5);
+    /*text-shadow: 0 0 15px rgb(6, 206, 39);*/
+    ;
+
+}
+
+.hero-role {
+    font-size: 25px;
+    /*color: rgb(206, 169, 6)*/
+    color: #ffcc00; 
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    display: inline-block;
+    margin-top: 20px;
+    filter: brightness(1.5);
+    /*text-shadow: 0 0 15px rgb(206, 169, 6);*/
+}
+
+.hero-aim {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: 20px;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.hero-highlight {
+    color: rgb(255, 3, 79);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+/*Home Buttons*/
+.home-buttons {
+    display: flex;
+    gap: 300px;
+    margin-top: 20px;
     align-items: center;
-    gap: 12px; /* space between icon and text */
+    justify-content:flex-start;
+
+}
+
+.hire {
+    max-width: 500px;
+    max-height: 500px;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #0077B5;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    background-color: #b55800ad;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.hire:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: rgb(94, 255, 0);
+    background-color: #005a8a;
+    text-shadow: 0 0 15px rgb(255, 51, 0);
+    transform: scale(1.2) translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3);
+}
+
+.cv {
+    max-width: 500px;
+    max-height: 500px;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #333;
+    background-color: rgb(212, 0, 255);
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+.cv:hover {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background-color: rgb(9, 5, 219);
+    text-shadow: 0 0 15px rgb(255, 51, 0);
+    background-color: #333;
+    transform: scale(1.2) translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-n-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Home Page Socials*/
+.social-links a i {
+    display: flex;
+    font-size: 35px;
+    margin-right: 45px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    gap: 70px;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+
+.social-links a:hover i {
+    transform: rotate(360deg) scale(1.2);
+    /* Slightly lifts up */
+    filter: brightness(1.5);
+    text-shadow: 0 0 15px rgba(238, 255, 0, 0.7);
 }
 
 /* Colored icons */
-.contacts i.phone { color: #0a74da; }      /* blue phone */
-.contacts i.instagram { color: #E1306C; }  /* Instagram pink */
-.contacts i.telegram { color: #0088cc; }   /* Telegram blue */
-.contacts i.tiktok { color: #010101; }     /* TikTok black */
-.contacts i.whatsapp { color: #25D366; }   /* WhatsApp green */
-.contacts i.email { color: #FF4500; }      /* Orange email */
-.contacts i.linkedin { color: #0077B5; }   /* LinkedIn blue */
-.contacts i.facebook { color: #1877F2; }   /* Facebook blue */
-
-/* Links */
-.contacts a {
-    text-decoration: none;
-    color: whitesmoke;
+.social-links i.email {
+    color: #FF4500;
 }
 
-.contacts a:hover {
-    color: #ff4500; /* Cold Fire accent color */
+
+.social-links i.linkedin {
+    color: #0077B5;
 }
 
-/* Submit Button */
-input[type="submit"] {
-    background-color: firebrick;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* Media Queries  */
-/* 📱 Mobile phones */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
 
-  nav {
-    flex-direction: column;
+.social-links i.github {
+    color: #ffffff; /* Make it white */
+    opacity: 0.8;    /* Make it slightly see-through so it blends with the green */
+
+}
+
+
+/* Footer  */
+footer {
+    background-color: #14362d; /* Darker green, less "vibrant" */
     text-align: center;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    color: white;
+    border-radius: 10px;
+    margin-top: auto;
+    width: 100%;
+    
 }
 
-/* 🖥️ Desktop screens */
-@media (min-width: 769px) {
-  body {
-    font-size: 16px;
-  }
+.footer-social-links a i {
+    font-size: 25px;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
 
-  nav {
-    flex-direction: row;
+.footer-social-links a:hover i {
+    filter: brightness(1.5);
+    transform: translateY(-3px);
+    text-shadow: 0 0 15px rgba(21, 255, 0, 0.7);
+}
+
+/* Colored icons */
+.footer-social-links i.email {
+    color: #FF4500;
+}
+
+
+.footer-social-links i.linkedin {
+    color: #0077B5;
+}
+
+
+.footer-social-links i.telegram {
+    color: #0088cc;
+}
+
+
+.footer-social-links i.github {
+    color: rgb(22, 20, 20);
+}
+
+
+
+.footer-div {
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
 
-  .container {
-    max-width: 1100px;
-    margin: auto;
-  }
+.footer-div1 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1d1919;
+    gap: 10px;
+}
+
+/*.contact-body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0d3535 45%, #13463b 55%);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Media Queries  */
+/* 📱 Mobile phones 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* 🖥️ Desktop screens 
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+    }
 }
