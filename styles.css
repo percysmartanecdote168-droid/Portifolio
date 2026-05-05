@@ -25,7 +25,7 @@ body {
     font-variation-settings: width 100px;
 }
 
-/*Index Page*/
+/*============ Index Page ===========*/
 
 /*logo*/
 .logo {
@@ -342,7 +342,7 @@ footer {
     gap: 10px;
 }
 
-/*About Page*/
+/*=========== About Page ===========*/
 
 /*About Body*/
 .about-body {
@@ -561,7 +561,7 @@ header {
     cursor: pointer;
 }
 
-/*Contact Page*/
+/*========== Contact Page ==========*/
 .contact-body {
     display: flex;
     min-height: 100vh;
@@ -648,4 +648,145 @@ header {
     background-color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 255, 157, 0.4);
+}
+
+/*Projects Page*/
+.projects-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.projects-container {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    gap: 25px;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr; 
+    ;
+}
+
+/* Project Card Styling */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Allows the corner preview to be positioned absolutely */
+    overflow: hidden;   
+}
+/* Image preview in the corner of each project card */
+.project-corner-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: #1a4a3e;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-corner-preview img {
+    width: 70%;
+    opacity: 0.6; /* Keeps it subtle like a watermark */
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffcc00; /* Gold highlight on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+    color: #00ff9d; /* Emerald Green */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.projects-subtitle {
+    color: #ffcc00; /* Matching your 'hero-role' gold */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.project-tech {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #b0c4b1;
+    margin-bottom: 20px;
+}
+
+/* GitHub CTA Section */
+.github-cta-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    border-top: 1px solid rgba(0, 255, 157, 0.1);
+}
+
+.github-main-btn {
+    display: inline-block;
+    background-color: #b55800ad;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #0077B5;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.github-main-btn:hover {
+    background-color: #005a8a;
+    color: #51ff00f6; /* Bright green hover effect */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3);
+}
+
+/*Badges*/
+.status-badge {
+    background: rgba(0, 255, 157, 0.1);
+    color: #00ff9d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #00ff9d;
+}
+
+.project-text {
+    font-size: 14px;
+    color: #b0c4b1;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.project-links {
+    display: flex;
+    gap: 35px;
+    margin-top: 15px;
 }
