@@ -14,22 +14,22 @@ Welcome to my personal portfolio website! This project showcases my skills in we
 * **Tools:** VS Code, Windows System CMD (Git).
 
 ## 📁 Project Structure
-* `index.html` - The main landing page featuring the Quick View Bar.
-* `about.html` - Information about my background, education, and technical skills.
-* `contact.html` - A sleek communication portal with focused input fields.
-* `projects.html` - A professional gallery of milestones and "Building Solutions" case studies.
-* `styles.css` - Centralized custom styling using a global root architecture.
-* `services.html` - The technical services I offer.
-* `blog.html` - A technical journal documenting coding challenges and Spanish language progress.
+* `index.html` - The main landing page featuring the Quick View Bar (Nairobi, Kenya).
+* `about.html` - Professional background, education goals, and technical skills.
+* `contact.html` - A focused communication portal for collaborations.
+* `projects.html` - A gallery of "Building Solutions" milestones.
+* `blog.html` - A technical journal for coding challenges and Spanish language progress.
+* `services.html` - Overview of technical offerings and expertise.
+* `styles.css` - Centralized styling using a global root architecture.
 
 ## 🔧 Installation & Local Setup
 To explore the code locally using **System CMD**:
 
 1. Clone the repository:
    ```cmd
-   git clone git clone [https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git](https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git)
+   git clone  [https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git](https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git)
 
-   Navigate into the folder:
+   
 
 2. Navigate to the folder:
    ```cmd
