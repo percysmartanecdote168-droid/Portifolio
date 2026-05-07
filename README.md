@@ -3,10 +3,11 @@
 Welcome to my personal portfolio website! This project showcases my skills in web development, my journey as a technical developer, and the projects I have built while learning HTML, CSS, and JavaScript.
 
 ## 🚀 Features
+* **Technical Services:** A dedicated showcase of expertise in Frontend Development, Technical Writing, and Bilingual Support.
+* **Technical Journal:** A dual-language blog documenting my #CodeLogs and #SpanishJourney toward B2 proficiency.
 * **Case Study Gallery:** A curated grid of projects featuring detailed "Challenge" and "Solution" statements.
-* **Responsive Design:** Optimized for both desktop and mobile viewing with a side-by-side project grid.
-* **Clean Navigation:** Easy access to Home, About, Contact, and Case Studies.
-* **Project Showcases:** Direct links to repositories for the Password-Checker, Traffic Light Simulator, and more.
+* **Responsive Design:** Optimized for both desktop and mobile viewing with a 2x2 grid layout.
+* **Clean Navigation:** Seamless transitions between Home, About, Contact, Blog, Projects, and Services.
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3 (Grid & Flexbox), JavaScript (ES6+).
@@ -19,7 +20,7 @@ Welcome to my personal portfolio website! This project showcases my skills in we
 * `contact.html` - A focused communication portal for collaborations.
 * `projects.html` - A gallery of "Building Solutions" milestones.
 * `blog.html` - A technical journal for coding challenges and Spanish language progress.
-* `services.html` - Overview of technical offerings and expertise.
+* `services.html` - Overview of technical offerings, expertise, and collaboration goals.
 * `styles.css` - Centralized styling using a global root architecture.
 
 ## 🔧 Installation & Local Setup
