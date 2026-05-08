@@ -3,10 +3,10 @@
 Welcome to my personal portfolio website! This project showcases my skills in web development, my journey as a technical developer, and the projects I have built while learning HTML, CSS, and JavaScript.
 
 ## 🚀 Features
+* **Adaptive Mobile Design:** Fully responsive layouts using Media Queries, featuring a custom "Hybrid-Flex" About section for mobile devices.
 * **Technical Services:** A dedicated showcase of expertise in Frontend Development, Technical Writing, and Bilingual Support.
 * **Technical Journal:** A dual-language blog documenting my #CodeLogs and #SpanishJourney toward B2 proficiency.
 * **Case Study Gallery:** A curated grid of projects featuring detailed "Challenge" and "Solution" statements.
-* **Responsive Design:** Optimized for both desktop and mobile viewing with a 2x2 grid layout.
 * **Clean Navigation:** Seamless transitions between Home, About, Contact, Blog, Projects, and Services.
 
 ## 🛠️ Tech Stack
@@ -54,5 +54,5 @@ git add README.md
 git commit -m "Add professional README to project"
 git push origin main
 ```
-====
+
 GitHub: [@percysmartanecdote168-droid](https://github.com/percysmartanecdote168-droid)
