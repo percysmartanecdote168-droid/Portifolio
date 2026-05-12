@@ -11,10 +11,10 @@ function About() {
                   </div>
                   <div className="about-content">
                     <p className="about-content-1">
-                      <span className="trait-1">Developer</span> |
-                      <span className="trait-2">Writer</span> |
-                      <span className="trait-3">Lifelong Learner</span> |
-                      <span className="trait-4">Chief Programmer</span>
+                      <span className="trait-1"> Developer</span> | 
+                      <span className="trait-2"> Writer</span> |
+                      <span className="trait-3"> Lifelong Learner</span> |
+                      <span className="trait-4"> Chief Programmer</span>
                     </p>
                     <p className="about-content-2">
                       I'm <span className="about-name"><b>Percy Njuguna</b></span>, a tech
