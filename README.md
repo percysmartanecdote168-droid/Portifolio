@@ -1,58 +1,58 @@
 # My Professional Portifolio
 
-Welcome to my personal portfolio website! This project showcases my skills in web development, my journey as a technical developer, and the projects I have built while learning HTML, CSS, and JavaScript.
+Welcome to my personal portfolio! This project has been refactored into a React SPA (Single Page Application) to showcase my transition from static web development to full-stack engineering. It highlights my technical skills, my journey toward Spanish B2 proficiency, and my work as a self-taught developer in Nairobi.
 
 ## 🚀 Features
-* **Adaptive Mobile Design:** Fully responsive layouts using Media Queries, featuring a custom "Hybrid-Flex" About section for mobile devices.
-* **Technical Services:** A dedicated showcase of expertise in Frontend Development, Technical Writing, and Bilingual Support.
-* **Technical Journal:** A dual-language blog documenting my #CodeLogs and #SpanishJourney toward B2 proficiency.
+* **React Architecture:** Migrated from static HTML to a modular component-based structure for better maintainability.
+
+* **Direct WhatsApp Integration:** A "Let's Chat" feature connected directly to my professional WhatsApp for instant collaboration.
+
+* **Technical Journal:** A dual-language blog documenting my #CodeLogs and #SpanishJourney toward DELE/SIELE certification.
+
 * **Case Study Gallery:** A curated grid of projects featuring detailed "Challenge" and "Solution" statements.
-* **Clean Navigation:** Seamless transitions between Home, About, Contact, Blog, Projects, and Services.
+
+* **Adaptive Mobile Design:** Fully responsive layouts using CSS Grid and Flexbox with a mobile-first approach.
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML5, CSS3 (Grid & Flexbox), JavaScript (ES6+).
-* **Backend/Hosting:** Firebase & GitHub Pages.
+* **Frontend:** React.js, HTML5, CSS3 (Grid & Flexbox), JavaScript (ES6+).
+* **Backend/Hosting:**  Node.js (learning) & Vercel.
 * **Tools:** VS Code, Windows System CMD (Git).
 
 ## 📁 Project Structure
-* `index.html` - The main landing page featuring the Quick View Bar (Nairobi, Kenya).
-* `about.html` - Professional background, education goals, and technical skills.
-* `contact.html` - A focused communication portal for collaborations.
-* `projects.html` - A gallery of "Building Solutions" milestones.
-* `blog.html` - A technical journal for coding challenges and Spanish language progress.
-* `services.html` - Overview of technical offerings, expertise, and collaboration goals.
-* `styles.css` - Centralized styling using a global root architecture.
+* `src/App.jsx` - The main entry point and layout manager.
+
+* `src/pages/` - Contains modular page components: `Home`, `About`, `Services`, `Projects`, `Blog`, and `Contact`.
+
+* `src/App.css` - Centralized styling using a global root architecture.
+
+* `Images/` - Optimized assets and professional photography.
 
 ## 🔧 Installation & Local Setup
 To explore the code locally using **System CMD**:
 
 1. Clone the repository:
    ```cmd
-   git clone  [https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git](https://github.com/percysmartanecdote168-droid/Personal-Portifolio.git)
+   git clone  [https://github.com/upsilonvibes/Personal-Portifolio.git](https://github.com/upsilonvibes/Personal-Portifolio.git)
 
    
 
 2. Navigate to the folder:
    ```cmd
-cd Portifolio
+cd Personal-Portifolio
 
-3. Open index.html in your preferred browser.
+3. Install Dependencies:
+   ```cmd
+   npm install
+
+4. Run Development Server:
+   ```cmd
+   nom run dev
+   
+
 
 ## 📬 Contact
-I am currently a university applicant and a self-taught developer. Feel free to explore my code or reach out via GitHub! I am also open for technical collaborations and web development opportunities.
+I am an 18-year-old student, university applicant, and self-taught developer based in Nairobi, Kenya. I am actively seeking technical collaborations and web development opportunities.
 
----
+LinkedIn: [@Percy Njuguna](https://linkedin.com/in/percy-njuguna)
 
-### How to add this to your project:
-
-1.  **Create the file:** In VS Code, create a new file and name it exactly `README.md`.
-2.  **Paste the code:** Copy the block above and paste it into that file.
-3.  **Save and Sync:** Run these final commands in your **CMD**:
-
-```cmd
-git add README.md
-git commit -m "Add professional README to project"
-git push origin main
-```
-
-GitHub: [@percysmartanecdote168-droid](https://github.com/percysmartanecdote168-droid)
+GitHub: [@upsilonvibes](https://github.com/upsilonvibes)

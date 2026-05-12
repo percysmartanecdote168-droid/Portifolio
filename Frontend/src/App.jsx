@@ -1,53 +1,85 @@
-import { useState, useEffect } from 'react' // 1. Added useEffect here
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 
 function App() {
-  const [count, setCount] = useState(0)
-  // 2. This state will store the message from your Node server
-  const [backendData, setBackendData] = useState("Connecting to Node.js...")
-
-  // 3. This runs automatically when the page opens
-  useEffect(() => {
-    fetch('http://localhost:5000/')
-      .then(res => res.text())
-      .then(data => setBackendData(data))
-      .catch(err => setBackendData("Backend is offline ❌"));
-  }, []);
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>{backendData}</h1> {/* 4. Display the Node.js message here */}
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="index-body">
+      {/* === Navigation === */}
+      <header>
 
-      <div className="ticks"></div>
+        <nav className="nav">
 
-      {/* ... the rest of your sections stay the same ... */}
-      <section id="next-steps">
-         {/* (Keep your Documentation and Social sections as they are) */}
-      </section>
-    </>
+
+          <img className="logo" src="Images/Portifolio Logo.png" />
+
+
+          <ul className="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+          <a
+            href="https://wa.me/254795557525?text=Hi%20Percy,%20I'm%20interested%20in%20your%20web%20development%20services!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-link"
+          >
+            <button className="header-button"><b>LET'S CHAT!</b></button>
+          </a>
+        </nav>
+
+      </header>
+
+      {/* === PAGES === */}
+      <div id="home"><Home /></div>
+      <div id="about"><About /></div>
+      <div id="services"><Services /></div>
+      <div id="projects"><Projects /></div>
+      <div id="blog"><Blog /></div>
+      <div id="contact"><Contact /></div>
+
+      
+
+    {/* === FOOTER === */ }
+  <footer className="footer" >
+    <div className="quick-view-bar">
+      <span><i className="fa-solid fa-location-dot"></i> Nairobi, Kenya</span>
+      <span><i className="fa-solid fa-code"></i> Focus: Node.js & Spanish</span>
+      <span><i className="fa-solid fa-circle-check"></i> Open for Opportunities</span>
+    </div>
+    <div className="footer-div">
+      <p>&copy; 2026 Percy Njuguna. All rights reserved.</p>
+      <div className="footer-div1">
+        <div><b>CONNECT:</b></div>
+        <div className="footer-social-links">
+          <a href="https://github.com/upsilonvibes" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-github github"></i>
+          </a>
+          <a href="https://t.me/upsilon_vibes" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-telegram telegram"></i>
+          </a>
+          <a href="https://linkedin.com/in/percy-njuguna" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-linkedin linkedin"></i>
+          </a>
+          <a href="mailto:percy.smartanecdote168@email.com">
+            <i className="fa-solid fa-envelope email"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer >
+    </div >
   )
 }
 
 export default App
+
