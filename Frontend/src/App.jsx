@@ -15,7 +15,7 @@ function App() {
         <nav className="nav">
 
 
-          <img className="logo" src="/images/Portifolio Logo.png" />
+          <img className="logo" src="/images/logo.png" alt="PN - Percy Njuguna Full-Stack Developer Logo"/>
 
 
           <ul className="nav-links">
@@ -70,7 +70,7 @@ function App() {
           <a href="https://linkedin.com/in/percy-njuguna" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin linkedin"></i>
           </a>
-          <a href="mailto:percy.smartanecdote168@email.com">
+          <a href="mailto:percy.smartanecdote169@email.com">
             <i className="fa-solid fa-envelope email"></i>
           </a>
         </div>

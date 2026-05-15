@@ -1,12 +1,12 @@
 function About() {
     return(
         < main className="about-container" >
-                <section className="about-hero">
+                <section id="about"className="about-hero">
                   <div className="about-headline-queries">
                     <h1 className="about-headline">About Me</h1>
 
                     <div>
-                      <img className="about-hero-image" src="/images/My Display Picture.jpg" alt="About Image" />
+                      <img className="about-hero-image" src="/images/hero_about.jpg" alt="Percy Njuguna - Web Developer and former student at Starehe Boys' Centre" />
                     </div>
                   </div>
                   <div className="about-content">
@@ -19,7 +19,7 @@ function About() {
                     <p className="about-content-2">
                       I'm <span className="about-name"><b>Percy Njuguna</b></span>, a tech
 
-                      enthusiast specializing in <span className="about-highlight">Full-Stack Web Development</span>. className
+                      enthusiast specializing in <span className="about-highlight">Full-Stack Web Development</span>. 
 
                       Whether I'm <span className="about-highlight">deploying code on GitHub</span>, <span
                         className="about-highlight">writing for my blog</span>, or <span className="about-highlight">sharpening
@@ -31,12 +31,23 @@ function About() {
 
                     </p>
                     <div className="education-box">
-                      <h3>Education</h3>
-                      <ul>
-                        <li><i className="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
-                        <li><i className="fa-solid fa-graduation-cap"></i> Gap Year / Aspiring Dev (2025-2026)</li>
-                      </ul>
-                    </div>
+  <h3>Professional Foundation</h3>
+  <ul>
+    <li>
+      <i className="fa-solid fa-microchip"></i> 
+      <strong>Starehe TTI</strong> — Technical Bridge Program (2025 - 2026)
+      <p className="edu-subtext">Selected for an intensive internal IT program focusing on full-stack logic and systems architecture.</p>
+    </li>
+    <li>
+      <i className="fa-solid fa-graduation-cap"></i> 
+      <strong>Starehe Boys' Centre</strong> — KCSE Graduate (B+ Average)
+    </li>
+    <li>
+      <i className="fa-solid fa-earth-americas"></i> 
+      <strong>Global Readiness</strong> — Self-Directed Spanish Immersion (DELE B2 Track)
+    </li>
+  </ul>
+</div>
 
                   </div>
                 </section >
@@ -57,8 +68,8 @@ function About() {
                     <p className="story-p">
                       Those early days were full of "red error messages" and frustration. At one point, I truly
                       believed
-                      that programming was a world I wasn't meant to enter. However, transitioning to <b>VS
-                        Code</b>
+                      that programming was a world I wasn't meant to enter. However, transitioning to <b> VS
+                        Code </b> 
                       and later adopting AI tools changed everything. It taught me that coding isn't about being
                       perfect; it's about having the
                       patience to solve one problem at a time.
@@ -110,9 +121,9 @@ function About() {
 
                   <div className="about-next">
                     <h2 className="next-title">What's Next?</h2>
-                    <p className="next-p">See my latest work on my <a href="projects.html"><span
+                    <p className="next-p">See my latest work on my <a href="#projects"><span
                       className="next-link">Projects
-                      Page</span></a> or read my latest thoughts on my <a href="blog.html"><span
+                      Page</span></a> or read my latest thoughts on my <a href="#blog"><span
                         className="next-link">Blog.</span></a></p>
                   </div>
                 </section>

@@ -1,4 +1,4 @@
-# My Professional Portifolio
+# My Professional Portfolio
 
 Welcome to my personal portfolio! This project has been refactored into a React SPA (Single Page Application) to showcase my transition from static web development to full-stack engineering. It highlights my technical skills, my journey toward Spanish B2 proficiency, and my work as a self-taught developer in Nairobi.
 
@@ -32,13 +32,13 @@ To explore the code locally using **System CMD**:
 
 1. Clone the repository:
    ```cmd
-   git clone  [https://github.com/upsilonvibes/Personal-Portifolio.git](https://github.com/upsilonvibes/Personal-Portifolio.git)
+   git clone  [https://github.com/upsilonvibes/Personal-Portfolio.git](https://github.com/upsilonvibes/Personal-Portfolio.git)
 
    
 
 2. Navigate to the folder:
    ```cmd
-cd Personal-Portifolio
+cd Personal-Portfolio
 
 3. Install Dependencies:
    ```cmd

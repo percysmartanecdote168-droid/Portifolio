@@ -1,7 +1,7 @@
 function Projects(){
     return(
         < main className="project-container" >
-                <section className="project-hero">
+                <section id="projects" className="project-hero">
                   <h1 className="next-title">Case Studies</h1>
                   <h2 className="projects-subtitle">Building Solutions Through Code</h2>
                   <p className="next-p">
@@ -17,7 +17,8 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
+                       
                         </div>
                       </div>
 
@@ -52,7 +53,7 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
                         </div>
                       </div>
 
@@ -86,7 +87,7 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
                         </div>
                       </div>
 
@@ -120,7 +121,7 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
                         </div>
                       </div>
 
@@ -139,10 +140,10 @@ function Projects(){
                           JavaScript logic and a visibility toggle for better UX.</p>
 
                         <div className="project-links">
-                          <a href="https://github.com/upsilonvibes/Password-Checker" class="next-link"
-                            target="_blank">Code <i class="fa-brands fa-github"></i></a>
+                          <a href="https://github.com/upsilonvibes/Password-Checker" className="next-link"
+                            target="_blank">Code <i className="fa-brands fa-github"></i></a>
                           <a href="#" className="next-link">Live Demo <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            className="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
 
                       </div>
@@ -154,7 +155,7 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
                         </div>
                       </div>
 
@@ -191,7 +192,7 @@ function Projects(){
                         <span className="project-status-badge">Completed</span>
                         <div className="project-corner-preview">
 
-                          <img src="/images/Portifolio Logo.png" alt="Preview" />
+                          <img src="/images/display.jpg" alt="Preview" />
                         </div>
                       </div>
 

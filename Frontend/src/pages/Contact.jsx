@@ -1,7 +1,7 @@
 function Contact(){
     return(
         <main className="contact-container">
-                <section className="contact-hero">
+                <section id="contact"className="contact-hero">
                   <h1 className="next-title">Get in Touch</h1><br />
                   <p className="next-p">Have a project in mind or just want to say hi? Feel free to reach out!</p>
 

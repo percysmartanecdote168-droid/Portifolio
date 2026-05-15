@@ -1,7 +1,7 @@
 function Blog() {
     return(
         < main className="blog-container" >
-                <section className="blog-header">
+                <section id="blog" className="blog-header">
                   <h1 className="next-title">Technical Journal</h1>
                   <h2 className="projects-subtitle">Diario de Aprendizaje</h2> <p className="next-p">Documenting my transition from HTML/CSS to JavaScript mastery and my journey toward Spanish B2 proficiency.</p>
                 </section>

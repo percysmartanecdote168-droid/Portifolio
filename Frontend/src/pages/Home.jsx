@@ -1,21 +1,21 @@
 function Home() {
     return(
         <main className="index-container">
-        <section className="index-hero">
+        <section id="home"className="index-hero">
             <div className="index-content">
                 <div>
                     <h1 className="hero"><span className="hero-welcome">¡Hola! Mucho gusto.</span></h1>
                     <h2 className="name">I am <span className="hero-name">Percy Njuguna</span><br/>
                         And I am a <span className="hero-role">Full Stack Developer</span></h2>
-                    <p className="hero-aim" >My aim is to engineer <span className ="hero-highlight">scalable, high-performance
-                        solutions</span>
+                    <p className="hero-aim" >My aim is to engineer <span className ="hero-highlight"> scalable, high-performance
+                        solutions </span>
                         that solve real-world problems, bridging the gap between maintainable code
-                        and <span className="hero-highlight">exceptional user experience</span>
+                        and <span className="hero-highlight"> exceptional user experience </span>
                         through <span className="hero-highlight">modern web standards</span>.
                     </p>
                 </div>
                 <div>
-                    <img className="index-hero-image" src="/images/My pic with blurred bg.png"/>
+                    <img className="index-hero-image" src="/images/favicon_image.jpg" alt="Percy Njuguna - Creative Developer Portfolio Hero"/>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@ function Home() {
 
                 <div className="home-buttons">
 
-                    <a href="contact.html">
+                    <a href="#contact">
                         <button className="hire"><b>Hire Me</b></button>
                     </a>
 
@@ -39,7 +39,7 @@ function Home() {
                             className="fa-brands fa-github github"></i></a>
                     <a href="https://linkedin.com/in/percy.smartanecdote168@gmail.com" target="_blank"
                         rel="noopener noreferrer"><i className="fa-brands fa-linkedin linkedin"></i></a>
-                    <a href="mailto:percy.smartanecdote168@email.com"><i className="fa-solid  fa-envelope email"></i></a>
+                    <a href="mailto:percy.smartanecdote169@email.com"><i className="fa-solid  fa-envelope email"></i></a>
 
 
                 </div>
