@@ -1,4 +1,5 @@
 import './App.css'
+import { useEffect, useState} from "react";
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -6,7 +7,39 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 
+
+
 function App() {
+  useEffect(() => { //1. Component Sentinel: Runs once when the component mounts to setup the listener
+  const sections = document.querySelectorAll("section");// Scans the DOM for all section elements
+  const navLinks = document.querySelectorAll(".nav-links a");// Scans for all anchor links inside navigation
+// An empty tracker to hold the ID of the section currently on screen
+  const handleScroll = () => {
+    let current = ""; 
+// Calculates the boundary of each section with a 150px offset for better timing
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.clientHeight;
+// If the user has scrolled past the top boundary of this section, mark it as current
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) =>{
+      // De-selects all nav links by removing the active styling class
+      link.classList.remove("active");
+// If the link's href matches the current section ID, highlight it
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  };
+//2. Event Binding: Attaches the scroll listener to the window browser
+  window.addEventListener("scroll", handleScroll);
+// 3. Cleanup Duty: Unbinds the listener when the component unmounts to prevent memory leaks
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   return (
     <div className="index-body">
       {/* === Navigation === */}

@@ -126,7 +126,13 @@ nav {
 .nav-links a:hover {
     color: #51ff00f6;
 }
-
+.nav-links a.active {
+    color: #00ff9d;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.8);
+    border-bottom: 2px solid #00ff9d;
+    padding-bottom: 3px;
+}
 /*Index Body*/
 .index-body {
     display: flex;

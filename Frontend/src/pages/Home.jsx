@@ -1,7 +1,7 @@
 function Home() {
     return(
         <main className="index-container">
-        <section id="home"className="index-hero">
+        <section id="home" className="index-hero">
             <div className="index-content">
                 <div>
                     <h1 className="hero"><span className="hero-welcome">¡Hola! Mucho gusto.</span></h1>
@@ -15,7 +15,7 @@ function Home() {
                     </p>
                 </div>
                 <div>
-                    <img className="index-hero-image" src="/images/favicon_image.jpg" alt="Percy Njuguna - Creative Developer Portfolio Hero"/>
+                    <img className="index-hero-image" src="/images/hero_index.jpg" alt="Percy Njuguna - Creative Developer Portfolio Hero"/>
                 </div>
             </div>
 
